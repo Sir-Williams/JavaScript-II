@@ -1,6 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function closure(closer){
+  const newCloser = closer;
+  const name = "Sir."
+  console.log(`${newCloser} someone`);
+
+  function closerResponse(){
+    const response = "Closure is completed"
+    console.log(`${newCloser} ${name} ${response}`)
+  }
+  closerResponse();
+}
+
+console.log(closure("This is a closer made by"))
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
